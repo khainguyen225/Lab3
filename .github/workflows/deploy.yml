@@ -24,7 +24,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   deploy:
-    name: Deploy to Cloudflare Pages
+    name: Deploy to Cloudflare Workers
     needs: sonarcloud
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -39,9 +39,9 @@ jobs:
           npm run lint
           npm run build
 
-      - name: lab3
+      - name: Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name="lab3"
+          command: deploy
