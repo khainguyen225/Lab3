@@ -21,6 +21,14 @@ body {
   width: 320px;
 }
 
+.subtitle {
+  color: #a0aec0;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
 .display {
   background: #0f3460;
   border-radius: 16px;

@@ -240,6 +240,7 @@ export default function App() {
 
   return (
     <div className="calculator">
+      <div className="subtitle">This is a calculator</div>
       <div className="display">
         <div className="expression" id="expression">
           {state.expression}
