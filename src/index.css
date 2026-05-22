@@ -21,7 +21,6 @@ body {
   width: 320px;
 }
 
-/* Display */
 .display {
   background: #0f3460;
   border-radius: 16px;
@@ -52,7 +51,6 @@ body {
   line-height: 1.1;
 }
 
-/* Button grid */
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -76,7 +74,6 @@ body {
   filter: brightness(0.85);
 }
 
-/* Number buttons */
 .btn-number {
   background: #1a1a2e;
   color: #e2e8f0;
@@ -86,7 +83,6 @@ body {
   background: #252545;
 }
 
-/* Operator buttons */
 .btn-operator {
   background: #0f3460;
   color: #90cdf4;
@@ -96,7 +92,6 @@ body {
   background: #1a4a7a;
 }
 
-/* Highlighted operator (÷ × − +) */
 .btn-highlight {
   background: #e94560;
   color: #fff;
@@ -106,7 +101,6 @@ body {
   background: #f05672;
 }
 
-/* Clear button */
 .btn-clear {
   background: #0f3460;
   color: #fc8181;
@@ -117,7 +111,6 @@ body {
   background: #1a4a7a;
 }
 
-/* Equals button */
 .btn-equals {
   background: #e94560;
   color: #fff;
@@ -128,7 +121,6 @@ body {
   background: #f05672;
 }
 
-/* Span two columns */
 .span-two {
   grid-column: span 2;
 }

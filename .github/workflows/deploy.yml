@@ -25,9 +25,9 @@ jobs:
 
   deploy:
     name: Deploy to Cloudflare Pages
-    needs: sonarcloud 
+    needs: sonarcloud
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main' 
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     steps:
       - name: Checkout Code
@@ -36,6 +36,7 @@ jobs:
       - name: Install Dependencies & Build
         run: |
           npm ci
+          npm run lint
           npm run build
 
       - name: Deploy to Cloudflare Pages
